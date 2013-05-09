@@ -352,7 +352,7 @@ para dentro dos models. Vamos então implementar essa função::
 
     // app/Model/Post.php
 
-    public function isOwnedBy($post, $user) {
+    function isOwnedBy($post, $user) {
         return $this->field('id', array('id' => $post, 'user_id' => $user)) === $post;
     }
 
